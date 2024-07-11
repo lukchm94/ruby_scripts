@@ -2,7 +2,7 @@ require_relative 'operations'
 
 # @param prompt [String]
 # @return [Float]
-def get_number(prompt: String)
+def get_number(prompt)
   print prompt
   gets.chomp.to_f
 end
@@ -12,8 +12,9 @@ def check_if_int(value)
     value = value.to_i
     return value
   else "Invalid result"
-  end
-  end
+  end 
+end 
+  
 number_1 = get_number("Enter the first number: ")
 number_2 = get_number("Enter the second number ")
 
